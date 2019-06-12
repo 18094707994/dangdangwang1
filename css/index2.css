@@ -1,0 +1,367 @@
+body {
+    background: #92edaa;
+    font-family: "微软雅黑";
+}
+
+body #bd {
+    background: #92edaa url(http://img62.ddimg.cn/upload_img/00684/zn/pcccccheafdbbbbbac-1559200017.jpg) no-repeat center top;
+}
+
+body #bd,
+body #d3031,
+body #d3032 {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.spacer,
+#component_47541 {
+    display: none;
+}
+
+.product_list,
+.row_l_5,
+.ebox,
+.clearfix {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.yt {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    padding-bottom: 20px;
+}
+
+.yt p {
+    margin: 0 auto;
+    padding-right: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-align: right;
+    line-height: 32px;
+}
+
+.yt img {
+    vertical-align: top;
+}
+
+.temp06_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.temp06_box .body li {
+    transition: all .2s;
+}
+
+.temp06_box .body li:hover {
+    box-shadow: 0 7px 13px #999;
+    background-color: #FFF;
+}
+
+.fenlei_banner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fffade;
+    font-size: 24px;
+    background: url(http://img60.ddimg.cn/upload_img/00684/zn/pcheaderstr-1559197996.jpg) no-repeat center top;
+}
+
+.bboian {
+    background: url(http://img61.ddimg.cn/upload_img/00684/zn/slidetopl-1559197996.png) no-repeat center top;
+    width: 120px;
+    position: relative;
+    top: 24px;
+    z-index: 10;
+}
+
+.fenlei_more {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.temp06_box .fenlei_more a,
+.fenlei_more a {
+    float: right;
+    height: 30px;
+    width: 63px;
+    background: #fe4701;
+    color: #fbe8bf;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px 20px 10px 0;
+    border-radius: 8px;
+    padding: 0 5px;
+}
+
+.xf_ban {
+    display: none;
+    z-index: 9999;
+    width: 103px;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    right: 35px;
+    _top: expression(eval(document.documentElement.scrollTop+0));
+    /* background: url(http://img61.ddimg.cn/upload_img/00754/ljp/xf_ljp_0429-1556520211.png) no-repeat center top; */
+    font-size: 14px;
+    /* padding-top: 97px; */
+}
+
+.xf_ban .xfTop {
+    background: #fe535c;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    width: 100px;
+    position: relative;
+    z-index: 8;
+    top: 0;
+    padding-top: 22px;
+}
+
+.xf_ban .xfTop a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px dashed #ffebbe;
+}
+
+.xf_ban .toTop {
+    width: 120px;
+    height: 52px;
+    background: url(http://img60.ddimg.cn/upload_img/00684/zn/slidebottom-1559197996.png) no-repeat center top;
+    line-height: 52px;
+    color: #dd261e;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    position: relative;
+    top: -23px;
+    text-indent: -9999px;
+}
+
+.xf_ban .xfTop a:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.xf_ban .xfTop a:hover {
+    font-weight: bold;
+}
+
+.hdTime {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.s3031 {
+    width: 960px;
+}
+
+.s3032 {
+    width: 960px;
+}
+
+body #bd,
+body .s3031 {
+    width: 1200px;
+}
+
+body #bd,
+body .s3032 {
+    width: 1200px;
+}
+
+.temp06_box {
+    width: 1200px;
+}
+
+.temp06_box .head .head {
+    height: 40px;
+    padding: 0 603px 0 28px;
+    color: #000;
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.temp06_box .head a {
+    display: block;
+    color: #404040;
+}
+
+.temp06_box .body {
+    background: url(http://img4.ddimg.cn/00109/mixadm/bg_moban02_sprite.png) repeat-x 0 bottom;
+    width: 1176px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    padding-left: 1px;
+}
+
+.temp06_box .body ul {
+    border-left: solid 1px #dfdedd;
+    margin-left: -1px;
+    background: #EFEEED;
+}
+
+.temp06_box .body li {
+    position: relative;
+    float: left;
+    border-bottom: 1px solid #dfdedd;
+    border-right: 1px solid #dfdedd;
+    vertical-align: top;
+    width: 214px;
+    height: 305px;
+    padding: 10px 10px 0;
+}
+
+.temp06_box .body li img {
+    display: block;
+    margin: 0 auto 6px;
+}
+
+.temp06_box .body li a {
+    color: #404040;
+}
+
+.temp06_box .body li a:hover {
+    color: #c30;
+}
+
+.temp06_box .body .name {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.temp06_box .body .price {
+    font-family: Arial;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    line-height: 18px;
+    padding-top: 4px;
+}
+
+.temp06_box .body .price_n,
+.temp06_box .body .rob {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c30;
+}
+
+.temp06_box .body .price .tail {
+    font-size: 14px;
+}
+
+.temp06_box .body .price_r {
+    color: #787878;
+    text-decoration: line-through;
+}
+
+.temp06_box .body .price .gift {
+    display: inline-block;
+    white-space: nowrap;
+    width: 130px;
+    overflow: hidden;
+}
+
+.temp06_box .showDetail,
+.temp06_box .addCart,
+.temp06_box .over {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 22px;
+    padding: 0 6px 0 26px;
+    background: url(http://img4.ddimg.cn/00109/mixadm/bg_moban05_sprite.png) no-repeat 0 -25px;
+    text-align: right;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.temp06_box .over {
+    background-position: 0 0;
+}
+
+.temp06_box .body .over a,
+.temp06_box .body .over a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.temp06_box .icon_pop {
+    display: block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.temp06_box .icon_pop .product_tags {
+    top: 0;
+    right: 0;
+}
+
+.temp06_box .predetermine {
+    background: url(http://img4.ddimg.cn/00109/mixadm/bg_moban05_sprite.png) no-repeat 0 -25px;
+    bottom: 0;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 0 6px 0 26px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
+.temp06_box ..button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 22px;
+    overflow: hidden;
+    width: 50%;
+    _right: -1px;
+    bottom: -1px;
+}
+
+.temp06_box .ebookprice_n {
+    padding: 0 0 0 8px;
+}
+
+.list_aa .main_pic_lable {
+    position: absolute;
+    bottom: 79px;
+    right: 17px;
+    width: 60px;
+}
