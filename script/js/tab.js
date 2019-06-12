@@ -1,0 +1,26 @@
+! function($) {
+    var $detail_tab = $('#detail_tab')
+    var $comment_tab = $('#comment_tab')
+    var $question_tab = $('#question_tab')
+    var $detail_all = $('#detail_all')
+    var $comment_all = $('#comment_all')
+    var $price_indication = $('.price_indication')
+    var $question_all = $('#question_all')
+    var $question_all = $('#question_all')
+    var $question_all = $('#question_all')
+    $detail_tab.on('click', function() {
+        $detail_tab.addClass('hover').siblings().removeClass('hover')
+        $detail_all.css('display', 'block').siblings().css('display', 'block')
+        $price_indication.css('display', 'block')
+    })
+    $comment_tab.on('click', function() {
+        $comment_tab.addClass('hover').siblings().removeClass('hover')
+        $detail_all.css('display', 'block').siblings().css('display', 'none')
+        $price_indication.css('display', 'none')
+    })
+    $question_tab.on('click', function() {
+        $question_tab.addClass('hover').siblings().removeClass('hover')
+        $detail_all.css('display', 'block').siblings().css('display', 'none')
+        $price_indication.css('display', 'none')
+    })
+}(jQuery)
