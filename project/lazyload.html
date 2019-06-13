@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="height:3000px;"></div>
+    <img src="http://hbimg.b0.upaiyun.com/611bb3198c03cfefea188d170f33f27f1611c8e8a3ea-o8nm2q_fw658" data-src="https://img11.360buyimg.com/mobilecms/s350x250_jfs/t11290/85/2807772568/150679/91da7322/5cd93db4N27677413.jpg!q90!cc_350x250.webp" alt="">
+    <script>
+        const oImg=document.querySelector('img');
+        window.onscroll=function(){
+            const ch=document.documentElement.clientHeight;
+            const stop=document.documentElement.scrollTop;
+            if(oImg.offsetTop<ch+stop){
+                oImg.src=oImg.getAttribute('data-src');
+            }
+        }
+    </script>
+</body>
+</html>

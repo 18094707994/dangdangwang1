@@ -1,17 +1,17 @@
 ! function($) {
-    var $btn = $('#submitLoginBtn');
-    var $username = $('.user');
-    var $password = $('.pass');
-    var $uspan1 = $('.placeholder1')
-    var $uspan2 = $('.placeholder2')
-    var $zhuce = $('.register_btn')
-    var $usertishi = $('#liDivErrorMessage')
-    var $passtishi = $('#login_password_error')
-    var $maskbtn = $('#J_loginMaskClose')
-    var $mask = $('.masks')
-
-    // var $url = 'http://localhost/dangdangwang/php/'
-    //把安全提醒点击后关掉
+    const $btn = $('.btn a');
+    const $username = $('.user');
+    const $password = $('.pass');
+    const $uspan1 = $('.placeholder1')
+    const $uspan2 = $('.placeholder2')
+    const $zhuce = $('.register_btn')
+    const $usertishi = $('#liDivErrorMessage')
+    const $passtishi = $('#login_password_error')
+    const $maskbtn = $('#J_loginMaskClose')
+    const $mask = $('.masks')
+    alert(1)
+        // var $url = 'http://localhost/dangdangwang/php/'
+        //把安全提醒点击后关掉
     $maskbtn.on('click', function() {
             $mask.hide();
         })
@@ -26,7 +26,7 @@
         })
         //得到焦点，给输入的提示
     $username.focus(function() {
-        $usertishi.show().html('请输入邮箱/昵称/手机号码');
+        $usertishi.show().html('请输入邮箱/昵称/手机号码hahah');
     })
     $password.focus(function() {
             $passtishi.show().html('请填写长度为6-20个字符的密码');
@@ -46,7 +46,9 @@
             }
 
         })
-        //提交表单
+        //点击注册跳转
+
+    //提交表单
     $btn.on('click', function() {
 
         $.ajax({
@@ -59,9 +61,7 @@
             },
             dataType: 'json',
 
-                success: function() {
 
-            }
 
 
         }).done(function(d) {

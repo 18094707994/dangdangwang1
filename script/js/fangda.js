@@ -5,14 +5,18 @@
         this.sf = $('#moveMask');
         this.bf = $('.big_pic');
         this.wrap = $('#largePicDiv');
-        this.listli = $('#main-img-slider li');
+        this.listli = $('.urls li');
         this.left = $('#pre_slide');
         this.right = $('#next_slide');
         this.listul = $('#main-img-slider');
+        this.lis = $('.urls li')
+
     }
 
 
     Scale.prototype.init = function() {
+
+
         let _this = this;
         this.spic.hover(function() {
             _this.showscale();

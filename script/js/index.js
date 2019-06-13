@@ -33,13 +33,13 @@
                   
                  
                             <li class="line1 " nname="book-825159-3032_3-3721106_1" ddt-pit="1" dd_name="1">
-                                <a title="${v.title}" class="img" href="http://http://10.31.164.38/dangdangwang/dist/details.html" target="_blank"><img data-original="http://img3m1.ddimg.cn/27/7/25298091-1_b_18.jpg" src="${v.imgurls}" alt="${v.title}" style="display: block;"></a>
+                                <a title="${v.title}" class="img" href="http://10.31.164.38/dangdangwang/src/dangdangwang1/details.html?sid=${v.sid}" target="_blank"><img class="lazy" data-original="${v.imgurls}" src="" width="200" height="200" alt="${v.title}" style="display: block;"></a>
                                 <div class="icon_pop"></div>
-                                <p class="name" ddt-src="25298091"><a title="${v.title}" href="http://10.31.164.38/dangdangwang/dist/details.html" target="_blank">${v.title};大冰作品全集5册</a></p>
+                                <p class="name" ddt-src="25298091"><a title="${v.title}" href="http://10.31.164.38/dangdangwang/src/dangdangwang1/details.html?sid=${v.sid}" target="_blank">${v.title};大冰作品全集5册</a></p>
                                 <p class="price"><span class="rob type102"><span class="sign">¥</span><span class="num">${v.price}</span></span><span class="price_r type102"></span></p><span class="ebookprice_n"><span class="ebookprice_title">电子书价：</span>
                                 <span class="sign">¥</span><span class="num">${v.salenum}</span></span>
                                 <div class="button">
-                                    <p class="action addCart type11"><a dd_name="加入购物车" href="http://10.31.164.38/dangdangwang/dist/details.html" name="buybutton" target="_blank">购买</a></p>
+                                    <p class="action addCart type11"><a dd_name="加入购物车" href="http://10.31.164.38/dangdangwang/src/dangdangwang1/details.html?sid=${v.sid}" name="buybutton" target="_blank">购买</a></p>
                                 </div>
                             </li>
                             
@@ -48,8 +48,14 @@
             });
             $strhtml += '</ul>';
             _this.xiaoshuo.html($strhtml);
-
+            //懒加载
+            $(function() { //和拼接的元素放在一起。
+                $("img.lazy").lazyload({
+                    effect: "fadeIn" //图片显示方式
+                });
+            });
         });
+
         //运送区域
         this.area.mouseover(function() {
             _this.arealist.show();

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Lazy Load Enabled</title>
+	</head>
+
+	<body>
+		<!--
+			http://www.jq22.com/jquery-info390
+			1.将图片路径写入data-original属性
+			2.给lazyload的图片增加一个名为lazy的class
+			3.选择所有要lazyload的图片（img.lazy），执行lazyload();
+			4.图片的尺寸需要约定。
+		-->
+		<img class="lazy" data-original="img/bmw_m1_hood.jpg" width="765" height="574" alt="BMW M1 Hood">
+		<img class="lazy" data-original="img/bmw_m1_side.jpg" width="765" height="574" alt="BMW M1 Side">
+		<img class="lazy" data-original="img/viper_1.jpg" width="765" height="574" alt="Viper 1">
+		<img class="lazy" data-original="img/viper_corner.jpg" width="765" height="574" alt="Viper Corner">
+		<img class="lazy" data-original="img/bmw_m3_gt.jpg" width="765" height="574" alt="BMW M3 GT">
+		<img class="lazy" data-original="img/corvette_pitstop.jpg" width="765" height="574" alt="Corvette Pitstop">
+		
+		
+		<script src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/jquery.lazyload.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {//和拼接的元素放在一起。
+				$("img.lazy").lazyload({
+					effect: "fadeIn"//图片显示方式
+				});
+			});
+		</script>
+	</body>
+
+</html>
