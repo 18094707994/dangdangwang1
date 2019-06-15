@@ -11,31 +11,53 @@
 
             let that = this;
             $.ajax({
-                url: 'http://10.31.164.38/dangdangwang/php/postdata.php',
-                data: {
-                    sid: that.sid,
-                },
-                dataType: 'json',
+                    url: 'http://10.31.164.38/dangdangwang/php/postdata.php',
+                    data: {
+                        sid: that.sid,
+                    },
+                    dataType: 'json',
 
-            }).done(function(d) {
-
-
-                let imgs = d.urls.split(',')
+                }).done(function(d) {
 
 
-                $.each(imgs, function(i, v) {
-                    console.log(v)
-                    that.lis[i].src = v
+                    let imgs = d.urls.split(',')
+
+
+                    $.each(imgs, function(i, v) {
+
+                        that.lis[i].src = v
+                    });
+
+
+
+
+
+
+
+                })
+                //通过登录按钮，跳转到登录页面
+            $('.login_link').on("click", function() {
+                    location.href = 'login.html'
+                })
+                //获取通过登录页面设置的cookie
+            if ($.cookie('username')) {
+                console.log($.cookie('username'))
+
+                $('#nickname ').html('Hi,' + $.cookie('username'))
+                $('.ddnewhead_welcome').css('width', "140px")
+                $('#tuichu').css('display', 'block')
+
+
+            }
+            //给退出按钮加点击事件，让它跳到首页
+            $('#tuichu').on('click', function() {
+                $.cookie('username', '18094707994', {
+                    expires: -1
                 });
-
-
-
-
-
-
-
+                location.href = 'details.html?sid=1'
+                $('#tuichu').css('display', 'none')
+                $('#nickname ').html('') //让请登录出现
             })
-
         }
     }
     new info().init();

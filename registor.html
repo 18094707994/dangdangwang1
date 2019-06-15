@@ -98,20 +98,21 @@
                                     <td class="t">登录密码</td>
                                     <td>
                                         <input name="txt_password" id="txt_password" onpaste="return false;" tabindex="2" type="password" class="text" maxlength="20">
-                                        <span id="spn_password_ok" class="icon_yes" style="display: none;"></span>
-                                        <span id="J_tipPassword" class="cue warn"></span>
-                                        <span id="J_tipUpperCaseBox" class="prompt" style="display: none;"><span class="icon"></span>键盘大写锁定已打开，请注意大小写!</span>
-                                        <span id="spnPwdStrongTips">
+                                        <sspan id="spn_password_ok" class="icon_yes" style="display: none;">
+                                            </span>
+                                            <span id="J_tipPassword" class="cue warn"></span>
+                                            <span id="J_tipUpperCaseBox" class="prompt" style="display: none;"><span class="icon"></span>键盘大写锁定已打开，请注意大小写!</span>
+                                            <span id="spnPwdStrongTips">
                                         <span id="spnPwdStrong1" class="cue warn j_pwdStrong" style="display: none;">
                                             <span class="msg_level"><span class="s1"></span><span></span><span></span></span>密码过于简单
-                                        </span>
-                                        <span id="spnPwdStrong2" class="cue warn j_pwdStrong" style="display: none;">
+                                            </span>
+                                            <span id="spnPwdStrong2" class="cue warn j_pwdStrong" style="display: none;">
                                             <span class="msg_level"><span class="s1"></span><span class="s2"></span><span></span></span>试试字母、符号、数字的组合更安全
-                                        </span>
-                                        <span id="spnPwdStrong3" class="cue warn j_pwdStrong" style="display: none;">
+                                            </span>
+                                            <span id="spnPwdStrong3" class="cue warn j_pwdStrong" style="display: none;">
                                             <span class="msg_level"><span class="s1"></span><span class="s2"></span><span class="s3"></span></span>密码设置安全，放心使用
-                                        </span>
-                                        </span>
+                                            </span>
+                                            </span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -130,11 +131,12 @@
                                 </tr>
                                 <tr>
                                     <!-- 图形验证码 -->
-                                    <td class="t j-vcode">验证码</td>
-                                    <td class="j-vcode">
+                                    <td id="tu1" class="t j-vcode">验证码</td>
+                                    <td id="tu2" class="j-vcode">
                                         <input class="text pin" type="text" id="txt_vcode" name="txt_vcode" autocomplete="off" placeholder="请输入验证码" maxlength="4" tabindex="5">
                                         <a class="code_pic" id="vcodeImgWrap" name="change_code_img" href="javascript:void(0);">
-                                            <img id="imgVcode" title="点击更换验证码" alt="点击更换验证码" width="84" height="37">
+                                            <span id="vcodes" style="width:84px;height:37px;line-height:38px">ssss</span>
+                                            <!-- <img id="imgVcode" title="点击更换验证码" alt="点击更换验证码" width="84" height="37"> -->
                                         </a>
                                         <a id="vcodeImgBtn" name="change_code_link" class="code_picww" href="javascript:void(0);">换张图</a>
                                         <span id="spn_vcode_ok" class="icon_yes pin_i" style="display: none;"></span>
@@ -142,8 +144,8 @@
                                         <!--<span class="icon_wrong pin_i"></span>-->
                                     </td>
                                     <!-- 短信验证码 -->
-                                    <td class="t j-phoneVcode" style="display: none">短信验证码</td>
-                                    <td class="j-phoneVcode" style="display: none">
+                                    <td id="duan1" class="t j-phoneVcode" style="display: none">短信验证码</td>
+                                    <td id="duan2" class="j-phoneVcode" style="display: none">
                                         <input id="J_MobileCode" name="txt_pop_sms_vcode" autocomplete="off" maxlength="6" tabindex="6" type="text" class="text pin" placeholder="请填写短信验证码">
                                         <a class="get_pin get_pinUnClick" id="J_countDownTip" href="javascript:void(0);" style="display: none;" tabindex="5">2分钟后重新获取</a>
                                         <a class="get_pin" id="sendMobileCode" href="javascript:void(0);" tabindex="5">获取短信验证码</a>
@@ -179,9 +181,10 @@
         <input type="hidden" name="action_post" id="action_post" value="register">
         <input type="hidden" name="returnurl" id="returnurl" value="http://book.dangdang.com/">
     </form>
-    <script src="script/js/jquery.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="script/js/registor.js"></script>
     <script src="script/js/jquery.validate.js"></script>
+    <script src="script/js/jquery.cookie.js"></script>
 
 </body>
 
